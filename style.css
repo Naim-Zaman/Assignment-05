@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 300px;
+}
+.meal-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px;
+    text-align: center;
+}
+/******************************
+     Search Button Design
+******************************/
+.meal-search-box{
+    margin: 32px 0px;
+    display: flex;
+}
+.search-control,
+.search-btn{
+    width: 100%;
+}
+.search-control{
+    padding: 0 32px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #f2f2f2;
+}
+.search-btn{
+    width: 80px;
+    height: 55px;
+    background: #b54507;
+    color: #fff;
+    display: inline-block;
+    border-radius: 0px 5px 5px 0px;!important
+}
+.search-btn:hover{
+    color:#fff;
+}
+/******************************
+        Meal List Design
+*******************************/
+.mealItem{
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -8px rgba(0, 0, 0, 0.6);
+    margin: 32px 0;
+}
+.mealImg img{
+    width: 100%;
+    display: block;
+}
+.mealName{
+    padding: 24px 8px;
+}
+.mealName h3{
+    font-size: 20px;
+}
+/*************************************
+     Error Message Provide Design
+**************************************/
+.notFound{
+    position: absolute;
+    top:118px;
+    left: 33%;
+    color: #b54507;
+    font-size: 30px;
+    font-weight: 600;
+    width: 100%;
+}
+/************************************
+          Media Quaries Use
+*************************************/
+@media screen and (min-width: 600px){
+    .meal-search-box{
+        width: 540px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 768px){
+    #meal{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+@media screen and (min-width: 992px){
+    #meal{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
